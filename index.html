@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Code Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<h1 class="text-center mb-4">QR Code Generator</h1>
+				<form>
+					<div class="form-group">
+						<label for="text">Text </label>
+						<input id="input" type="text" class="form-control" id="text" placeholder="Enter text to encode">
+					</div>
+					
+					<button id="btn" type="button" class="btn btn-primary">Generate QR Code</button>
+					<button onclick="location.reload()" type="button" class="btn btn-primary">Reload</button>
+				</form>
+				<div class="mt-4" >
+
+                        <img src="" alt="" id="qrcode" class="mx-auto d-block">
+
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- QR Code API JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/@datalogue/qrcode-api@1.0.3/dist/qrcode-api.min.js"></script>
+	<!-- Custom JavaScript -->
+	<script src="script.js"></script>
+</body>
+</html>
